@@ -1,7 +1,6 @@
 import express from "express";
 import Thread from "../models/Thread.js";
 import getOpenAIAPIResponse from "../utils/openai.js";
-
 const router = express.Router();
 
 //test
@@ -78,6 +77,7 @@ router.post("/chat", async(req, res) => {
         let thread = await Thread.findOne({threadId});
 
         if(!thread) {
+            
             //create a new thread in Db
             thread = new Thread({
                 threadId,

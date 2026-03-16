@@ -2,6 +2,7 @@
   "name": "Backend",
   "version": "1.0.0",
   "description": "API for the chat application.",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
